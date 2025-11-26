@@ -1,0 +1,46 @@
+ALEX CARTER
+alex.carter@example.com | (555) 291-8743 | San Diego, CA
+github.com/alexcarter-dev | linkedin.com/in/alexcarter
+
+EDUCATION
+University of California, San Diego
+B.S. in Computer Science, Expected June 2026
+Relevant Coursework: Data Structures & Algorithms, Machine Learning, Operating Systems, Database Systems, Software Engineering
+
+TECHNICAL SKILLS
+Languages: Python, Java, C++, SQL, JavaScript
+Tools & Frameworks: PyTorch, TensorFlow, React, Node.js, Flask, Docker, Git
+Concepts: Machine Learning, REST APIs, Distributed Systems, Data Pipelines
+
+PROJECTS
+SmartTransit (Python, ML)
+• Built a real-time bus arrival prediction model using LSTM networks, improving prediction accuracy by 18%.
+• Designed a pipeline to clean, merge, and process 2M+ GPS datapoints from a public transit dataset.
+• Containerised the entire system using Docker to support scalable deployment.
+
+PixelForge (React, Node.js)
+• Developed a full-stack collaborative drawing platform with real-time canvas syncing over WebSockets.
+• Implemented role-based access control and persistent project saving with MongoDB.
+• Improved frontend load performance by 30% via code splitting and caching.
+
+GPU Weather Simulator (C++, CUDA)
+• Accelerated fluid-dynamics-based weather simulation by 12× using CUDA kernels.
+• Wrote custom memory-optimised kernels for particle advection and temperature diffusion.
+
+WORK EXPERIENCE
+Software Engineering Intern — Horizon Analytics (June 2024 – September 2024)
+• Implemented data processing modules for a telemetry monitoring platform ingesting 30K+ events/sec.
+• Wrote Python ETL jobs responsible for 15% overall speed improvement.
+• Built automated integration tests using pytest and GitHub Actions.
+
+LEADERSHIP & ACTIVITIES
+Computer Science Society — Project Team Lead
+• Led a 6-student team developing a campus navigation app with indoor routing.
+• Managed weekly standups, roadmap planning, and code reviews.
+
+Hackathons
+• Winner (1st Place), SD Hacks 2024 — built a wildfire-risk prediction dashboard using satellite imagery.
+
+ADDITIONAL
+• Strong interests in ML engineering, distributed systems, and large-scale backend systems.
+• Fluent in English and conversational in Spanish.
