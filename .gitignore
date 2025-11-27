@@ -1,9 +1,4 @@
 .env
 venv/
 .ipynb_checkpoints/
-<<<<<<< HEAD
-google-generativeai
-google-adk
 .vscode
-=======
->>>>>>> 2d0545d991cc1e708c83662740c906d395935ee7
