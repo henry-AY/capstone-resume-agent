@@ -1,13 +1,21 @@
 # Multi-Agent Resume Tailoring System
 
-## Automates the entire resume tailoring process for job applications, from research, rewriting, to polishing.
+### Automates the entire resume tailoring process for job applications, from research, rewriting, to polishing.
 
-<p style="text-align:center;">[Link to Agents Intensive - Capstone Project].</p>
+<!--
+Source - https://stackoverflow.com/a
+Posted by oezi, modified by community. See post 'Timeline' for change history
+Retrieved 2025-11-28, License - CC BY-SA 2.5
+-->
+
+<div align="center">
+  <a href="https://www.kaggle.com/competitions/agents-intensive-capstone-project/overview"><ins>🤖 AI Agents - Capstone Project</a>
+</div>
 
 ## Overview
 A multi-agent LLM pipeline that ingests a raw resume and a job query, performs job research, rewrites the resume to match the job, and outputs a polished, job-tailored resume + explanation. This project is built using Google's Agent Development Kit (ADK) and follows a modular structure, easy for future expansions. 
 
-> Insert photo of structure here
+<img width="1656" height="1656" alt="capstone_sequential_agent" src="https://github.com/user-attachments/assets/8bcbb850-88dd-4e96-97e3-c9d8f6433d93" />
 
 ## Problem Statement
 
@@ -69,16 +77,15 @@ The Multi-Agent resume tailoring system aims to simplify a task that almost ever
 
 I tested the pipeline against real job postings to measure how well it performed in the 'real world', and it most definitely has improved the efficiency of the resume tailoring process. I've noticed the real benefit isn't in rewriting the entire resume from scratch; instead, it's in quickly rewriting bullet points to closely match the job description. What used to take the time to tailor one resume, I can now get through 3-4x using the agent workflow, and that kind of efficiency gain is extremely valuable.
 
-If I had more time, I'd focus on adding memory to the agents. Currently, the agents only know about the current resume and job description; however, giving them recall of previous resumes and/or context would let them build a significantly deeper profile of the user and produce a significantly more consistent and personalized rewrite.
+If I had more time, I'd focus on adding memory to the agents. Currently, the agents only know about the current resume and job description; however, giving them recall of previous resumes and/or context would let them build a significantly deeper profile of the user and produce a substantially more consistent and personalized rewrite.
 
 ## Running this Repository
 
 ### Requirements
 
-- Python 3.10+    
-- `.env` file containing: `GOOGLE_API_KEY=your_key_here`
+- Python 3.10+
 
-### 1. Fork + Clone the Repo
+### 1. Fork the repository
 
 ```bash
 git clone <repo_url>
@@ -86,8 +93,12 @@ cd capstone-resume-agent
 pip install -r requirements.txt
 ```
 
-### 2. Usage
+### 2. API Key
+
+Create a `.env` file (in the `capstone-resume-agent` directory) containing `GOOGLE_API_KEY=your_key_here`.
+
+### 3. Usage + Running
 
 Open notebooks/ResumeAgentPipeline.ipynb and run all cells.
-Input your raw resume text and job query when prompted.
+Please just input your raw resume text and job query when prompted.
 The final polished resume (and rationale) will be rendered in Markdown format.
