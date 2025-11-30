@@ -96,17 +96,25 @@ If I had more time, I'd focus on adding memory to the agents. Currently, the age
 ```bash
 git clone <repo_url>
 cd capstone-resume-agent
+```
+
+### 2. Create a Virtual Environment
+
+After creating a virtual environment, install the requirements.txt file.
+
+```
 pip install -r requirements.txt
 ```
 
-### 2. API Key
+### 3. API Key
 
 Create a `.env` file (in the `capstone-resume-agent` directory) containing `GOOGLE_API_KEY=your_key_here`.
 
-### 3. Usage + Running
+### 4. Usage + Running
 
-* Add your resume as a `.txt` file to the `data\..` directory, and replace `resume_path = Path("data/...")` with your resume path.
+* Add your resume as a `.txt` file to the `capstone-resume-agent/data/...` directory.
     * Look at `data/alex_carter_demo_resume.txt` as an example if necessary.
-* Open notebooks/resume-agent-notebook.ipynb and run all cells.
+* Open notebooks/resume-agent-notebook.ipynb, and replace `resume_path = Path("data/...")` in the notebook with your resume path.
+* Save the notebook, and run all cells.
 * Input your job query when prompted.
 * The final polished resume (and rationale) will be rendered in Markdown format.
