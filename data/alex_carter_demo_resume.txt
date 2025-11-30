@@ -1,6 +1,6 @@
 ALEX CARTER
-alex.carter@example.com | (555) 291-8743 | San Diego, CA
-github.com/alexcarter-dev | linkedin.com/in/alexcarter
+alex.carter@example.com | (555) 555-5555 | San Diego, CA
+github.com/alexcarterexample | linkedin.com/in/alexcarterexample
 
 EDUCATION
 University of California, San Diego
