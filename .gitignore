@@ -1,3 +1,7 @@
 .env
 venv/
 .ipynb_checkpoints/
+.vscode
+.DS_Store
+logger.log
+*.log
