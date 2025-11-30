@@ -17,6 +17,12 @@ A multi-agent LLM pipeline that ingests a raw resume and a job query, performs j
 
 <img width="1656" height="1656" alt="capstone_sequential_agent" src="https://github.com/user-attachments/assets/8bcbb850-88dd-4e96-97e3-c9d8f6433d93" />
 
+#### Features
+
+1) **Sequential Multi-Agent Pipeline:** 4 Gemini agents (intake, research, rewrite, polish) working in a sequential and dependent flow.
+2) **Built-in Tool Usage (Google Search):** Utilizes the built-in Google Search tool to gather real-world job-specific information.
+3) **Context Engineering:** Each agent recieves only the necessary information it needs, enabling the prompts to include dynamic data without context overflow of the entire output.
+
 ## Problem Statement
 
 Personalizing a resume for every job application is a laborious and time-consuming grind. To do it well, you have to invest significant time into researching, drafting, editing, and polishing so it reads smoothly. Doing that once is fine; however, it is not scalable doing it tens-hunderds of times for internships or full-time jobs and can easily become exhausting. 
@@ -99,6 +105,8 @@ Create a `.env` file (in the `capstone-resume-agent` directory) containing `GOOG
 
 ### 3. Usage + Running
 
-Open notebooks/ResumeAgentPipeline.ipynb and run all cells.
-Please just input your raw resume text and job query when prompted.
-The final polished resume (and rationale) will be rendered in Markdown format.
+* Add your resume as a `.txt` file to the `data\..` directory, and replace `resume_path = Path("data/...")` with your resume path.
+    * Look at `data/alex_carter_demo_resume.txt` as an example if necessary.
+* Open notebooks/resume-agent-notebook.ipynb and run all cells.
+* Input your job query when prompted.
+* The final polished resume (and rationale) will be rendered in Markdown format.
