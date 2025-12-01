@@ -27,7 +27,8 @@ A multi-agent LLM pipeline that ingests a raw resume and a job query, performs j
 
 Personalizing a resume for every job application is a laborious and time-consuming grind. To do it well, you have to invest significant time into researching, drafting, editing, and polishing so it reads smoothly. Doing that once is fine; however, it is not scalable doing it tens-hunderds of times for internships or full-time jobs and can easily become exhausting. 
 
-A lot of people end up reusing the same resume simply because personalizing for every job description takes too long. Thus, good candidates can get filtered out by the ATS system or simply overlooked because their resume doesn't clearly match the role. It's a workflow that's highly repetitive, which means it can efficiently be automated. This allows the candidates to focus their time on the actual application process and interview preparation, while the agent system handles the personalization in the background.
+A lot of people end up reusing the same resume simply because personalizing for every job description takes too long. Thus, good candidates can get filtered out by the ATS system or simply overlooked because their resume doesn't clearly match the role. It's a workflow that's highly repetitive, which means it can efficiently be automated. This allows the candidates to focus their time on the actual application process and interview preparation, while the agent system handles the personalization in the background. Finally, the user can pick and choose what parts of the polished resume they like, fill in any missing values, and/or update it to match their preferences.
+
 
 ## Solution Statement
 
@@ -55,7 +56,7 @@ Given the parsed resume and the synthesized job research in a prompt, this agent
 
 #### Polishing Agent: `polish_agent`
 
-The final step is refinement. The polishing agent cleans up the draft, improves readability, enforces consistent formatting and tone, and resolves any awkward phrasing that can appear in earlier generations. This stage is crucial to the quality of the final output, as the agent has strict instructions to explicitly produce a polished resume, and in the end, it outputs a fully polished Markdown resume.
+The final step is refinement. The polishing agent cleans up the draft, improves readability, enforces consistent formatting and tone, and resolves any awkward phrasing that can appear in earlier generations. This stage is crucial to the quality of the final output, as the agent has strict instructions to explicitly produce a polished resume, and in the end, it outputs a fully polished Markdown resume (note: the user may have to fill in some blanks after the resume has been polished).
 
 ## Essential Tools & Helper functions
 
